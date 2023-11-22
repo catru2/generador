@@ -1,0 +1,271 @@
+.titulo{
+color: #DA2933;
+text-align: center;
+border: 2px solid gray;
+}
+
+.cre{
+color: #07227B;
+text-align: center;
+}
+
+.login{
+width: 380px;
+margin: 0 auto;
+padding: 20px;
+border-radius: 5px;
+
+}
+
+.sub{
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 10px;
+color: #07227B;
+}
+
+.input_container {
+width: 90%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 10px;
+  }
+  
+  .boton{
+  height: 40px;
+  background-color: #F1E4FF;
+  color: #8C30F5;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  
+  }
+
+  .contenedor_boton{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .botonpa{
+    position: absolute;
+    top: 20px;
+    right: 110px;
+  }
+
+  .titulo_prin{
+    width: 30%;
+    color: #07227B;
+    margin-left: 80px;
+    margin-top: 40px;
+   
+  }
+
+  .imag_prin{
+    width: 400px;
+    height: 380px;
+    margin-left: 800px;
+    position: absolute;
+    margin-top: -60px;
+  }
+  .titulo_segp{
+    margin-left: 880px;
+    margin-top: 350px;
+    
+  }
+ 
+  .titulo_crear{
+    color: #07227B;
+    text-align: center;
+  }
+
+ .crearcuen{
+width: 380px;
+margin: 0 auto;
+padding: 20px;
+border-radius: 5px;
+  }
+
+  .contenedor_botoncrear{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+.titulo_inicio{
+    width: 45%;
+    color: #07227B;
+    margin-left: 450px;
+    margin-top: 40px;
+}
+.subti_inicio{
+  color: #07227B;
+  margin-left: 630px;
+  margin-top: 70px;
+}
+
+.contbotons_inicio{
+  display: flex;
+  justify-content:space-between;
+  width: 650px;
+  margin: 35px auto;
+}
+
+.titulo_generar{
+  width: 45%;
+  color: #07227B;
+  margin-left: 700px;
+  margin-top: 40px;
+}
+.generar{
+  width: 390px;
+ margin: 0 auto;
+
+}
+
+.labelinpu_generador{
+  width: 320px;
+  height: 160px;
+  margin: 0 auto;
+ 
+}
+.sub_crear{
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #07227B;
+  }
+.cajas_gene{
+    display: flex;
+    justify-content: left;
+    width: 450px;
+    margin: 0 auto;
+  }
+.sub_check{
+ margin-top: 1px;
+ font-size: 14px;
+ color: #07227B;
+ font-weight: bold;
+ padding: 0px 5px;
+}
+
+.sub_longi{
+  display: flex;
+  font-size: 14px;
+  margin-top: -125px;
+  margin-left: 500px;
+  width: 160px;
+  height: 30px;
+  color: #07227B;
+  font-weight: bold;
+}
+.input_longitud{
+
+margin-top: -200px;
+margin-left: 500px;
+width: 15%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.contendor_contragene{
+justify-content: center;
+width: 55%;
+padding: 80px;
+margin-top: 30px;
+border-radius: 5px;
+background-color: #F1B4BB;
+height: 10px;
+} 
+.sub_generada{
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: -20%;
+  color: #07227B;
+}
+
+.input_generada{
+  width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.boton_generada{
+  margin-top: 10px;
+  margin-left: 5%;
+  padding: 0px 20px ;
+  height: 40px;
+  background-color: #F1E4FF;
+  color: #8C30F5;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.input_cuentacrea{
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.historial{
+  width: 380px;
+  margin: 0 auto;
+
+}
+.titulo_historial{
+  width: 45%;
+  color: #07227B;
+  margin-left: 620px;
+  margin-top: 40px;
+}
+
+.contendor_columnas{
+  width: 40%;
+  margin-left: 480px;
+  border-radius: 5px;
+  background-color: #F1B4BB;
+}
+
+.columnas{
+  justify-content: space-around;
+  display: flex;
+ font-size: 15px;
+ align-items: center;
+  height: 60px;
+ 
+}
+.columnas p{
+  width: 100px;
+}
+
+.contenedor_botonhistorial{
+justify-content: space-around;
+display: flex;
+margin-top: 0px;
+height: 0px;  
+}
+.boton_historial{
+ margin-top: 20px;
+  height: 40px;
+  background-color: #F1E4FF;
+  color: #8C30F5;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.boton_cerrarsesion{
+  margin-top: -310px;
+  margin-left: 300px;
+  background-color: #DA2933;
+}
