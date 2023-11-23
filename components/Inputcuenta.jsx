@@ -2,7 +2,7 @@ import React from 'react'
 
 function Inputcuenta(props) {
   return (
-    <input type={props.tipo} placeholder={props.holder} className='input_cuentacrea' />
+    <input type={props.tipo} placeholder={props.holder} onChange={props.fun} className='input_crear_cuenta' />
   )
 }
 

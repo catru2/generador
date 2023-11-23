@@ -22,9 +22,9 @@ function Bodyinicio() {
       <Buttom tipo="Historial"/>
       </Link>
 
-      
+      <Link href="/">
       <Buttom tipo="Cerrar sesion"/>
-     
+     </Link>
        
        
         

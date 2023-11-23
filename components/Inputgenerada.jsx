@@ -1,8 +1,8 @@
 import React from 'react'
 import "./estilo.css"
-function Inputgenerada() {
+function Inputgenerada(props) {
   return (
-    <input className='input_generada' />
+    <input className='input_generada' value={props.val}/>
   )
 }
 

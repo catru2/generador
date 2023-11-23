@@ -12,19 +12,24 @@ import Labelgenerada from './Labelgenerada'
 import Inputgenerada from './Inputgenerada'
 import "./estilo.css"
 import { useState } from 'react'
+import axios from 'axios'
+import { useRouter } from 'next/navigation'
 function Formgenerador() {
+  const [ready, setReady] = useState ("")
   const [password, setPassword] = useState({
+      usuario:"",
+      sitio:"",
       mayuscula:false,
       minuscula:false,
       numeros:false,
-      caracteres:false,
+      especiales:false,
       longitud:0
   })
   const handleChange = (e) =>{
       if(!e.target.checked){
       setPassword({
         ...password,
-        longitud:e.target.value
+        [e.target.name]:e.target.value
       })
       }else{
         setPassword(
@@ -36,18 +41,25 @@ function Formgenerador() {
       }
       
   }
-  const hadleSubmit = (e) =>{
+  const hadleSubmit = async(e) =>{
     e.preventDefault()
-    console.log(password)
+    const res = await axios.post("http://localhost:3001/generar-contrasena",password, {withCredentials: true} )
+    setReady(res.data.contraseña)
+    if(res.data.mensaje){
+      
+      alert("se creo exitosamente")
+      navigation.replace("/logeado/login")
+    
   }
+}
   return (
     <div className='generar'>
          <form onSubmit={hadleSubmit}>
          <div className='labelinpu_generador'>
          <Labelcrear titulo="Usuario" /> 
-         <Input/>
+         <Input name="usuario" fun={handleChange}/>
          <Labelcrear  titulo="Sitio"/> 
-         <Input/>
+         <Input name="sitio" fun={handleChange}/>
          <div className='contador_contra'>
           <Labellongi titulo="Longitud de la contraseña"/>
           <Inputlongitud fun={handleChange} name="longitud" />  
@@ -61,7 +73,7 @@ function Formgenerador() {
          <Labelcheck titulo="Minúsculas" />
          <Inputcrear caja="checkbox" fun={handleChange} name="numeros"/>
          <Labelcheck titulo="Números" />
-         <Inputcrear caja="checkbox" fun={handleChange} name="caracteres"/>
+         <Inputcrear caja="checkbox" fun={handleChange} name="especiales"/>
          <Labelcheck titulo="Caracteres especiales"/>
          </div>
        
@@ -69,15 +81,15 @@ function Formgenerador() {
         
         <Buttom tipo="Generar contraseña" type="submit"/>
         
-        <Buttom tipo="Regresar"/>
+        <Buttom tipo="Regresar" type="button"/>
        </div>
          </form>
 
         <div className='contendor_contragene'>
-        <Labelgenerada titulo="Contraseña Generada" />
-        <Inputgenerada />  
-        <Buttomgenerada tipo="Copiar" />
-        <Buttomgenerada tipo="Guardar"/>
+        <Labelgenerada titulo="Contraseña Generada"/>
+        
+        <p>{ready}</p>  
+        
         </div>
         </div>
        

@@ -1,11 +1,11 @@
 import React from 'react'
 import Body from '@/components/Body'
-import Form from '@/components/Form'
+import Forminiciarsesion from '@/components/Forminiciarsesion'
 function LoginPage() {
   return (
   <div>
     <Body/>
-    <Form/>
+    <Forminiciarsesion/>
     </div>
   
   )
